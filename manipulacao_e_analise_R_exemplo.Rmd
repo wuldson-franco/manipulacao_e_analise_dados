@@ -57,7 +57,7 @@ library(rmdformats)
 ### ===========================
 
 
-gs4_auth(email = 'wuldson.franco@a3data.com.br')
+gs4_auth(email = 'insiraseuemail')
 
 ## =====================================================================================================##
 ## Criando os Indicadores
@@ -68,8 +68,8 @@ gs4_auth(email = 'wuldson.franco@a3data.com.br')
 # Dados ja calculados dos indicadores que vamos trabalhar, os indicadores foram calculados no xaweasxa. Já corrigindo o tipo do dado, somente as datas que não estão sendo lido como datas.
 # Dados da xxxx coletados de xxxxxx
 
-txo_antes <- read_sheet("https://docs.google.com/spreadsheets/d/13DxywYIkRHLOgl8vs05o0VylZY_kOhP1Ewx1kuWZXJI/edit#gid=0", sheet = 1, col_types = "?cnnn")
-txo_depois <- read_sheet("https://docs.google.com/spreadsheets/d/13DxywYIkRHLOgl8vs05o0VylZY_kOhP1Ewx1kuWZXJI/edit#gid=0", sheet = 2,col_types = "?cnnn")
+txo_antes <- read_sheet("insiralinkdaplanilha", sheet = 1, col_types = "?cnnn")
+txo_depois <- read_sheet("insiralinkdaplanilha", sheet = 2,col_types = "?cnnn")
 
 names(txo_antes) <- make.names(names(txo_antes))
 names(txo_depois) <- make.names(names(txo_depois))
@@ -107,7 +107,7 @@ txo_geral_mm <- txo_antes %>%
 
 ### anual para comparar com xxxx
 
-txo_anual_xxxx <- read_sheet("https://docs.google.com/spreadsheets/d/13DxywYIkRHLOgl8vs05o0VylZY_kOhP1Ewx1kuWZXJI/edit#gid=0", sheet = 4,col_types = "?n")
+txo_anual_xxxx <- read_sheet("insiralinkdaplanilha", sheet = 4,col_types = "?n")
 txo_anual_xxxx <- txo_anual_xxxx %>% 
   mutate(class = 'xxxx' )
 
