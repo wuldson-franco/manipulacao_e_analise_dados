@@ -82,7 +82,7 @@ txo_antes <- txo_antes %>%
 
 txo_depois <- txo_depois %>% 
   mutate(mes = as.Date(mes), class = 'depois', perc = '-') %>% 
-  dplyr::filter(!(unidade %in% c("HMD-SSA","PREMIUM","HSG" )) & mes <= '2022-09-01')
+  dplyr::filter(!(unidade %in% c("Empresa6","Empresa5","Empresa4" )) & mes <= '2022-09-01') --> Filtrando outras empresas
 
 ### criando o delta
 
