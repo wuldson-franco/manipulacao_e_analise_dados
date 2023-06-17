@@ -18,6 +18,7 @@ Para utilizar este projeto, siga as etapas abaixo:
 * Abra o arquivo manipulacao_e_analise_R_exemplo.Rmd no RStudio ou em outro ambiente compatível com R Markdown.
 * Certifique-se de ter todas as dependências necessárias instaladas (consulte no inicio do arquivo as librarys).
 * Execute o arquivo manipulacao_e_analise_R_exemplo.Rmd, que contém todo o código, comentários e visualizações da análise de dados.
+* Para visualizar em seu navegador baixe o arquivo manipulacao_e_analise_R_exemplo.html e execute-o no seu browser.
 
 ### ✍️ Contribuição
 Contribuições são bem-vindas! Se você deseja contribuir para este projeto, siga as etapas abaixo:
